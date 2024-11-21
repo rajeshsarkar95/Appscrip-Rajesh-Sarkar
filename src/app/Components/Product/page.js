@@ -491,7 +491,7 @@ export default function Card(props) {
         >
           {products.map((product) => (
             <div key={product.id} className="card">
-              <img className="images" src={product.image} alt={product.title} />
+              <Image className="images" src={product.image} alt={product.title} />
               <div>
                 <h1  className="Product_Name">
                   Product Name
