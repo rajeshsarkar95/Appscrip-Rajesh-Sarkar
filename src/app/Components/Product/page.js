@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { IoIosHeartEmpty } from "react-icons/io";
 import "./product.css";
 
-export default function Card(props) {
+export default function Product(props) {
   const [products, setProducts] = useState([]);
   const { ispen, setIspen } = props;
   const toggleSidebar = () => {
