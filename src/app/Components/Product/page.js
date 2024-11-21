@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { IoIosHeartEmpty } from "react-icons/io";
 import "./product.css";
