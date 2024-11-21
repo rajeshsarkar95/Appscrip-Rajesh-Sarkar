@@ -8,7 +8,12 @@ import { LiaShoppingBagSolid } from "react-icons/lia";
 import { IoMdMenu } from "react-icons/io";
 import { FaHeart } from "react-icons/fa6";
 function Navbar() {
+ const [isMenuOpen,setIsMenuOpen] = useState(false) 
  const [visible,setVisible] = useState(false)
+ const toggleMenu = () => {
+  setIsMenuOpen(!isMenuOpen);
+   };
+
  const handlevisible = () => {
         setVisible(false)
  }
@@ -19,18 +24,18 @@ function Navbar() {
     <>
       <div className="lorem_span_doler">
         <div>
-          <Image height={10} width={100} src="/Frame.png" alt="lorem" className="display_none" />
+          <Image height={15} width={100} src="/Frame.png" alt="lorem" className="display_none" />
         </div>
         <div>
-          <Image height={10} width={100}  src="/Frame.png" alt="lorem"/>
+          <Image height={15} width={100}  src="/Frame.png" alt="lorem"/>
         </div>
         <div>
-          <Image height={10} width={100}  src="/Frame.png" alt="lorem" className="display_none" />
+          <Image height={15} width={100}  src="/Frame.png" alt="lorem" className="display_none" />
         </div>
       </div>
       <div className="Nav_container">
         <div className="Nav_logo">
-          <i className="menu_icon">
+          <i onClick={toggleMenu} className="menu_icon">
             <IoMdMenu />
           </i>
           <Image
@@ -74,7 +79,7 @@ function Navbar() {
           </div>
         </div>
       </div>
-      <div className="List_item">
+      <div className={`List_item ${isMenuOpen ? 'open' : ""}`}>
         <ul>
           <li>SHOP</li>
           <li>SKILL</li>

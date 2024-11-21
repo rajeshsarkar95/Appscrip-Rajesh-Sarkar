@@ -65,8 +65,11 @@ function Page() {
             height={30}
           />
           <h5 className="Acceots">mettā muse Accepts</h5>
-          <Image src="/Payment.png" height={20} alt="gpay" width={100} />
+          <Image src="/Payment.png" height={25} alt="gpay" width={300} />
         </div>
+      </div>
+      <div className="copywrite">
+        <h3 style={{color:"white"}}>Copyright © 2023 mettamuse. All rights reserved.</h3>
       </div>
     </div>
   );

@@ -123,6 +123,13 @@
     background-color: #000;
     color: #fff;
   }
+  .copywrite{
+    background-color: rgba(0, 0, 0, 1);
+    display: flex;
+    align-items: center;
+    font-family: SIMPLONMONO-REGULAR;
+    justify-content: center;
+  }
   @media (max-width: 776px) {
     .footer, .lower_footer {
       flex-direction: column;
@@ -158,6 +165,9 @@
   
     .meta_mause {
       margin-left: 0;
+    }
+    .copywrite{
+      font-size: 10px;
     }
   }
   
