@@ -6,7 +6,7 @@ function discover_page() {
   return (
     <>
     <div className="home_shop">
-     <dir style={{opacity:"0.5"}} >HOME |</dir>
+     <dir style={{opacity:"0.5"}} >HOME|</dir>
       <div>SHOP</div>
     </div>
      <div className="dic_container">

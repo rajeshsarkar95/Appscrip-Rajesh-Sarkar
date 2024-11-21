@@ -36,13 +36,14 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 0;
-  padding: 0;
 }
 @media (max-width: 768px) {
   .dic_container {
     margin-top: 33px;
     height: auto;
+  }
+  .home_shop{
+    margin-left: -12px;
   }
   .discover_p {
     font-size: 1rem;
