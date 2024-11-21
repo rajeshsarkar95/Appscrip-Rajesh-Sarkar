@@ -7,7 +7,7 @@ import Rectangle from "./Components/Rectangle/page.js";
 import Product from "./Components/Product/page.js";
 import Footer  from  "./Components/Footere/page.js"
 
-function page() {
+function Page() {
   const [ispen, setIspen] = useState(true);
   return (
     <div>
@@ -19,4 +19,4 @@ function page() {
     </div>
   );
 }
-export default page;
+export default Page;
