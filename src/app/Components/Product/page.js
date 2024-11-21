@@ -11,7 +11,7 @@ export default function Card(props) {
   const toggleSidebar = () => {
     setIspen(!ispen);
   };
-  const [isOpen, setIsOpen] = React.useState({
+  const [isOpen, setIsOpen] = useState({
     ideal_for: false,
     work: false,
     today: false,
@@ -492,7 +492,8 @@ export default function Card(props) {
         >
           {products.map((product) => (
             <div key={product.id} className="card">
-              <Image className="images" src={product.image} alt={product.title} />
+              <Image className="images" src={product.image} alt={product.title} width={100} height={100}
+         />
               <div>
                 <h1  className="Product_Name">
                   Product Name
