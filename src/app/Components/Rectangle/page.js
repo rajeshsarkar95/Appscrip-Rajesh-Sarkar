@@ -4,7 +4,7 @@ import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import "./rectangle.css";
 
-function middlebar(props) {
+function Rectangle(props) {
   const { ispen, setIspen } = props;
   const [isDisabled, setIsDisabled] = useState(false);
 
@@ -13,7 +13,6 @@ function middlebar(props) {
   }
   const Disabled = () => {
     if (!isDisabled) {
-      console.log("Filter toggled");
     }
   };
 
@@ -68,4 +67,4 @@ function middlebar(props) {
     </div>
   );
 }
-export default middlebar;
+export default Rectangle;

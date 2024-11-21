@@ -8,9 +8,7 @@ import "./product.css";
 export default function Productlist(props) {
   const [products, setProducts] = useState([]);
   const { ispen, setIspen } = props;
-  const toggleSidebar = () => {
-    setIspen(!ispen);
-  };
+
   const [isOpen, setIsOpen] = useState({
     ideal_for: false,
     work: false,
@@ -64,7 +62,7 @@ export default function Productlist(props) {
         <div className={`sidebar ${ispen ? "" : "hidden"}`}>
           <input className="con_checkbox" type="checkbox" value="" />
           <b className="concheck_box">CUSTOMIZBLE</b>
-          <hr style={{opacity:"0.2"}} />
+          <hr style={{ opacity: "0.2" }} />
           <div className="App">
             <div className="Mainsidebar">
               {/* Ideal For Section */}
@@ -492,12 +490,15 @@ export default function Productlist(props) {
         >
           {products.map((product) => (
             <div key={product.id} className="card">
-              <Image className="images" src={product.image} alt={product.title} width={100} height={100}
-         />
+              <Image
+                className="images"
+                src={product.image}
+                alt={product.title}
+                width={100}
+                height={100}
+              />
               <div>
-                <h1  className="Product_Name">
-                  Product Name
-                </h1>
+                <h1 className="Product_Name">Product Name</h1>
 
                 <p className="sing_create">
                   <u>Sign in</u> or Create an account to see pricing
