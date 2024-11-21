@@ -9,7 +9,7 @@ import { IoMdMenu } from "react-icons/io";
 import { FaHeart } from "react-icons/fa6";
 function Navbar() {
  const [isMenuOpen,setIsMenuOpen] = useState(false) 
- const [visible,setVisible] = useState(false)
+ const [visible,setVisible] = useState(true)
  const toggleMenu = () => {
   setIsMenuOpen(!isMenuOpen);
    };

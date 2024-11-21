@@ -29,6 +29,7 @@ function Page() {
           </div>
           <h4 className="currency">CURRENCY</h4>
           <p className="curency_p">Transactions will be completed in Euros and a currency reference is available on hover.</p>
+          <Image src="/Language.png" alt="Currency" width={80} height={30}/>
         </div>
       </div>
       <div className="lower_footer">

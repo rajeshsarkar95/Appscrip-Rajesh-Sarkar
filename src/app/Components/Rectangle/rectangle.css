@@ -71,6 +71,7 @@
     }
     
     .right {
+      margin-left: 12px;
       display: flex;
       justify-content: flex-start;
       width: 100%;
