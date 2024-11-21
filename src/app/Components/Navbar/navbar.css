@@ -1,0 +1,115 @@
+@font-face {
+  font-family: SIMPLONMONO-REGULAR;
+  src: url(https://static1.squarespace.com/static/6181e18cca832e610f8957e6/t/618ae4290088502e4657967f/1636492329559/SimplonMono-Regular.otf);
+}
+@font-face {
+  font-family: SIMPLONNORM-BOLD;
+  src: url(https://static1.squarespace.com/static/6181e18cca832e610f8957e6/t/618ae4197262ac6ffdf4a65a/1636492313895/SimplonNorm-Bold.otf);
+}
+
+@font-face {
+  font-family: SIMPLONMONO-BOLD;
+  src: url(https://static1.squarespace.com/static/6181e18cca832e610f8957e6/t/619e62aa9b4b6a3eef1d70cf/1637769898983/SimplonMono-Bold.otf);
+}
+.lorem_span_doler{
+    justify-content: space-around;
+    display: flex;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+.Nav_container {
+  height: 15vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Nav_logoname {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-size: 36px;
+  letter-spacing: 1px;
+  margin-left: 11%;
+}
+.icon {
+  display: flex;
+  gap: 10%;
+}
+i{
+  font-size: 24px;
+}
+.Langubase {
+  border: none;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-weight: 800;
+}
+option{
+    margin: 0;
+    padding: 0;
+}
+.List_item {
+    display: flex;
+    height: 10vh;
+    justify-content: center; 
+    align-items: center; 
+  }
+  .List_item ul {
+    display: flex;
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+  }
+  .List_item li {
+    font-family: SIMPLONMONO-REGULAR;
+    margin: 0 15px;
+    font-weight: 800; 
+  }
+  .Nav_hr_line{
+    opacity: 0.2;
+    color: rgba(255, 255, 255, 1);
+    padding: 0;
+    margin: 0;
+    font-weight: 800;
+  }
+  @media (max-width: 768px) {
+     .Nav_container{
+         height: 8vh;
+     }
+    .List_item{
+        display: none;
+    }
+    .Langubase{
+        display: none;
+    }
+    #profile_icon{
+        display: none;
+    }
+    .logo_images{
+        width: 20px;
+        height: 20px;
+    }
+    .Nav_logoname{
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu_icon{
+        font-size: 25px;
+        align-items: center;
+    }
+    .display_none{
+        display: none;
+    }
+    
+  }
+  @media (min-width: 768px) {
+    .menu_icon{
+        display: none;
+    }
+  }
+  
+  
+
+

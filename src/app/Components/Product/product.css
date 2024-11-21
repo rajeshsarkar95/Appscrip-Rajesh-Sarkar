@@ -1,0 +1,197 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: auto;
+  box-sizing: border-box;
+  transition: margin-left 0.3s;
+  max-width: 1200px;
+  margin-top: 30px;
+}
+.Product_Name {
+  margin-right: 48%;
+  width: 100%;
+}
+
+.check_box {
+  font-family: SIMPLONNORM-BOLD;
+}
+
+.m-0 {
+  margin: 0;
+  font-family: SIMPLONNORM-BOLD;
+}
+
+.ph {
+  cursor: pointer;
+}
+
+.filter_item input,
+.filter_item label {
+  cursor: pointer;
+}
+
+.Mainsidebar {
+  width: 300px;
+}
+
+.hr_tag {
+  opacity: 0.2;
+  width: 296px;
+}
+
+.filter_section_head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter_section_head b {
+  margin: 0;
+}
+
+.unselected {
+  color: grey;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.sidebar {
+  flex: 0.9 1;
+  width: 25%;
+  height: auto;
+  box-sizing: border-box;
+  transition: transform 0.3s;
+  display: no;
+}
+
+.sidebar.hidden {
+  transform: translateX(-100%);
+  display: none;
+
+}
+
+.toggleButton {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.concheck_box {
+  font-family: SIMPLONNORM-BOLD;
+}
+
+.main_Content {
+  width: 932px;
+  flex: 3;
+  padding: 1%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0px 8px;
+  overflow-y: auto;
+  box-sizing: border-box;
+  transition: margin-left 0.3s;
+}
+
+.mainContent.expanded {
+  margin-left: 0;
+}
+
+.card {
+  padding: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.card .Product_Name {
+  text-align: left;
+  font-size: 18px;
+  height: 9%;
+  color: rgba(37, 32, 32, 1);
+  font-family: 'SIMPLONNORM-BOLD';
+}
+
+.card .sing_create {
+  opacity: 0.6;
+  font-family: 'SIMPLONNORM-BOLD';
+  align-items: end;
+  width: 100%;
+  align-content: start;
+  font-size: 12px;
+}
+
+.heart_ico {
+  margin-left: 0%;
+  font-size: 145%;
+
+}
+
+.images {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  box-shadow: rgba(1, 0, 0, 0.05) 1px 0px 5px 1px;
+}
+
+@media (max-width: 768px) {
+  .Mainsidebar {
+    display: none;
+  }
+
+  .checkbox {
+    display: none;
+  }
+
+  .concheck_box {
+    display: none;
+  }
+
+  .images {
+    object-fit: contain;
+    width: 109%;
+    height: 79%;
+    box-shadow: rgba(1, 0, 0, 0.05) 1px 0px 5px 1px;
+  }
+
+  .main_Content {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2%;
+    gap: 1px 20px;
+
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    box-sizing: border-box;
+    transition: margin-left 0.3s;
+    margin-right: 15px;
+    margin-left: -79px;
+    margin-top: 3%;
+  }
+
+  .card .Product_Name {
+    color: rgba(37, 32, 32, 1);
+    font-size: 14px;
+    text-align: left;
+    width: 100%;
+  }
+
+  .card .sing_create {
+    font-size: 10px;
+    opacity: 0.6;
+    text-align: left;
+    margin-top: 8%;
+  }
+}

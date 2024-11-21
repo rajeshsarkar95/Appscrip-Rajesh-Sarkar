@@ -1,0 +1,72 @@
+@font-face {
+  font-family: SIMPLONMONO-REGULAR;
+  src: url(https://static1.squarespace.com/static/6181e18cca832e610f8957e6/t/618ae4290088502e4657967f/1636492329559/SimplonMono-Regular.otf);
+}
+@font-face {
+  font-family: SIMPLONNORM-BOLD;
+  src: url(https://static1.squarespace.com/static/6181e18cca832e610f8957e6/t/618ae4197262ac6ffdf4a65a/1636492313895/SimplonNorm-Bold.otf);
+}
+
+@font-face {
+  font-family: SIMPLONMONO-BOLD;
+  src: url(https://static1.squarespace.com/static/6181e18cca832e610f8957e6/t/619e62aa9b4b6a3eef1d70cf/1637769898983/SimplonMono-Bold.otf);
+}
+.dic_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 40vh;
+  gap: 8%;
+  padding: 0 10px;
+}
+.discover_h h1 {
+  font-family: SIMPLONMONO-REGULAR;
+  margin: 0;
+  font-size: 2.3rem;
+}
+.discover_p {
+  width: 40%;
+  line-height: 30px;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+.home_shop{
+  font-family: SIMPLONMONO-REGULAR;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 768px) {
+  .dic_container {
+    margin-top: 33px;
+    height: auto;
+  }
+  .discover_p {
+    width: 80%;
+    font-size: 1rem;
+  }
+  .discover_h h1 {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 480px) {
+  .dic_container {
+    padding: 0 5px;
+  }
+  .discover_p {
+    width: 90%;
+    font-size: 0.9rem;
+  }
+  .discover_h h1 {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 480px) {
+  .home_shop{
+    display: none;
+  }
+}
