@@ -34,21 +34,28 @@
 .icon {
   display: flex;
   gap: 10%;
+  cursor: pointer;
 }
 i{
   font-size: 24px;
 }
 .Langubase {
   border: none;
-  margin: 0;
-  padding: 0;
+  cursor: pointer;
   outline: none;
   font-weight: 800;
 }
-option{
-    margin: 0;
-    padding: 0;
-}
+input[type=text],
+ select {
+   padding:0px;
+ }
+
+ select {
+    
+    border:solid 1px #555;
+    border-radius:3px;
+    padding:0px;
+ }
 .List_item {
     display: flex;
     height: 10vh;
@@ -62,9 +69,13 @@ option{
     margin: 0;
   }
   .List_item li {
+    cursor: pointer;
     font-family: SIMPLONMONO-REGULAR;
     margin: 0 15px;
     font-weight: 800; 
+  }
+  li:hover{
+    text-decoration: underline;
   }
   .Nav_hr_line{
     opacity: 0.2;
@@ -76,6 +87,12 @@ option{
   @media (max-width: 768px) {
      .Nav_container{
          height: 8vh;
+     }
+     .Nav_logo{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
      }
     .List_item{
         display: none;
@@ -97,8 +114,10 @@ option{
         justify-content: center;
     }
     .menu_icon{
+        margin-top: 5px;
         font-size: 25px;
         align-items: center;
+       
     }
     .display_none{
         display: none;

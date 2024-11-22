@@ -59,9 +59,6 @@ function Navbar() {
             )
             }
             <i>
-              
-            </i>
-            <i>
               <LiaShoppingBagSolid />
             </i>
             <Image
