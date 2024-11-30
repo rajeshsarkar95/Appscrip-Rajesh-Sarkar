@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
 import "./navbar.css";
@@ -8,18 +9,18 @@ import { LiaShoppingBagSolid } from "react-icons/lia";
 import { IoMdMenu } from "react-icons/io";
 import { FaHeart } from "react-icons/fa6";
 function Navbar() {
- const [isMenuOpen,setIsMenuOpen] = useState(false) 
- const [visible,setVisible] = useState(true)
- const toggleMenu = () => {
-  setIsMenuOpen(!isMenuOpen);
-   };
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [visible, setVisible] = useState(true)
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
- const handlevisible = () => {
-        setVisible(false)
- }
- const handlevisibleof = () => {
-        setVisible(true)
- }
+  const handlevisible = () => {
+    setVisible(false)
+  }
+  const handlevisibleof = () => {
+    setVisible(true)
+  }
   return (
     <>
       <div className="lorem_span_doler">
@@ -27,10 +28,10 @@ function Navbar() {
           <Image height={15} width={100} src="/Frame.png" alt="lorem" className="display_none" />
         </div>
         <div>
-          <Image height={15} width={100}  src="/Frame.png" alt="lorem"/>
+          <Image height={15} width={100} src="/Frame.png" alt="lorem" />
         </div>
         <div>
-          <Image height={15} width={100}  src="/Frame.png" alt="lorem" className="display_none" />
+          <Image height={15} width={100} src="/Frame.png" alt="lorem" className="display_none" />
         </div>
       </div>
       <div className="Nav_container">
@@ -55,7 +56,7 @@ function Navbar() {
             {visible ? (
               <i onClick={handlevisible}><CiHeart /></i>
             ) : (
-               <i onClick={handlevisibleof} style={{color:"red"}}><FaHeart /></i>
+              <i onClick={handlevisibleof} style={{ color: "red" }}><FaHeart /></i>
             )
             }
             <i>
@@ -77,12 +78,22 @@ function Navbar() {
         </div>
       </div>
       <div className={`List_item ${isMenuOpen ? 'open' : ""}`}>
-        <ul>
-          <li>SHOP</li>
-          <li>SKILL</li>
-          <li>STORIES</li>
-          <li>ABOUT</li>
-          <li>CONTACT US</li>
+        <ul className="nav-links">
+          <Link href="/" className="nav-link">
+            <li>Home</li>
+          </Link>
+          <Link href="/Components/About" className="nav-link">
+            <li>ABOUT</li>
+          </Link>
+          <Link href="/Components/Skills" className="nav-link">
+            <li>SKILL</li>
+          </Link>
+          <Link href="/Components/Stories" className="nav-link">
+            <li>STORIES</li>
+          </Link>
+          <Link href="/Components/Contact" className="nav-link">
+            <li>CONTACT US</li>
+          </Link>
         </ul>
       </div>
       <hr className="Nav_hr_line" />
