@@ -52,8 +52,6 @@
   padding: 0.5rem 0;
   transition: all 0.3s ease;
 }
-
-/* Underline effect */
 .nav-link::after {
   content: '';
   position: absolute;
@@ -73,7 +71,6 @@
   color: #000;
 }
 
-/* Active link style */
 .nav-link.active li {
   color: #000;
   font-weight: 600;
@@ -82,8 +79,6 @@
 .nav-link.active::after {
   width: 100%;
 }
-
-/* Mobile responsive styles */
 @media (max-width: 768px) {
   .nav-links {
     flex-direction: column;
@@ -110,7 +105,6 @@
   }
 }
 
-/* Optional: Animation for mobile menu */
 @keyframes slideIn {
   from {
     opacity: 0;
