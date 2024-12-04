@@ -65,7 +65,6 @@ export default function Productlist(props) {
           <hr style={{ opacity: "0.2" }} />
           <div className="App">
             <div className="Mainsidebar">
-              {/* Ideal For Section */}
               <div className={`filter_section ${ispen ? "" : "hidden"}`}>
                 <div className="filter_section_head">
                   <b className="m-0">IDEAL FOR</b>
@@ -184,8 +183,6 @@ export default function Productlist(props) {
                 </div>
               </div>
               <hr className="hr_tag" />
-
-              {/* Work Section */}
               <div className="filter_section">
                 <div className="filter_section_head">
                   <b className="m-0">SUTABLE FOR</b>
@@ -427,8 +424,6 @@ export default function Productlist(props) {
                 </div>
               </div>
               <hr className="hr_tag" />
-
-              {/* Today Section */}
               <div className="filter_section">
                 <div className="filter_section_head">
                   <b className="m-0">TODAY</b>

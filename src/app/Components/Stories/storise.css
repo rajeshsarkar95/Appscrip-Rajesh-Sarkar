@@ -9,8 +9,6 @@
     margin-bottom: 2rem;
     color: #333;
   }
-  
-  /* Category Filter */
   .category-filter {
     display: flex;
     justify-content: center;
@@ -36,8 +34,7 @@
     background: #333;
     color: white;
   }
-  
-  /* Stories Grid */
+
   .stories-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -118,8 +115,7 @@
   .read-more:hover {
     background: #444;
   }
-  
-  /* Responsive Design */
+
   @media (max-width: 768px) {
     .stories-container {
       padding: 1rem;

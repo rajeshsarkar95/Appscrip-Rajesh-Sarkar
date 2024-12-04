@@ -9,7 +9,7 @@ function Page() {
       <div className="footer">
         <div className="first_div">
           <h4 className="B_FIRST">BE THE FIRST TO KNOW</h4>
-          <p className="first_p">Sign up for updates from mettā muse. </p>
+          <p className="first_p">Sign up for updates from mettā muse </p>
           <div className="input">
               <input
                 className="first_input"
@@ -29,7 +29,7 @@ function Page() {
           </div>
           <h4 className="currency">CURRENCY</h4>
           <Image src="/Language.png" alt="Currency" width={80} height={30}/>
-          <p className="curency_p">Transactions will be completed in Euros and a currency reference is available on hover.</p>
+          <p className="curency_p">Transactions will be completed in Euros and a currency reference is available on hover</p>
         </div>
       </div>
       <div className="lower_footer">

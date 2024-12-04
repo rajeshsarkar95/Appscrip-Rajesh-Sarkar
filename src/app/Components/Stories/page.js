@@ -23,7 +23,7 @@ function Stories() {
             title: "Exploring Hidden Beaches",
             category: "travel",
             date: "March 12, 2024",
-            image: "/story2.jpg", // Add your image path
+            image: "/story2.jpg", 
             excerpt: "Discovering secluded paradises around the world that are yet to be explored by tourists.",
             author: "Jane Smith",
             readTime: "4 min read"
@@ -33,12 +33,11 @@ function Stories() {
             title: "Healthy Living Guide",
             category: "lifestyle",
             date: "March 10, 2024",
-            image: "/story3.jpg", // Add your image path
+            image: "/story3.jpg", 
             excerpt: "Tips and tricks for maintaining a balanced lifestyle in today's fast-paced world.",
             author: "Mike Johnson",
             readTime: "6 min read"
         },
-        // Add more stories as needed
     ];
 
     const filteredStories = selectedCategory === "all"
@@ -50,8 +49,6 @@ function Stories() {
         <Navbar/>
         <div className="stories-container">
             <h1>Our Stories</h1>
-
-            {/* Category Filter */}
             <div className="category-filter">
                 {categories.map((category) => (
                     <button
@@ -63,8 +60,6 @@ function Stories() {
                     </button>
                 ))}
             </div>
-
-            {/* Stories Grid */}
             <div className="stories-grid">
                 {filteredStories.map((story) => (
                     <div key={story.id} className="story-card">
